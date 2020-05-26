@@ -21,3 +21,8 @@ theme = "hello-friend-ng"
 [[params.social]]
   name = "twitter"
   url  = "https://twitter.com/AfonsoGraca"
+
+[params.favicon.color]
+  mask = "#f5f5f5"
+  theme = "#f5f5f5"
+  msapplication = "#f5f5f5"
