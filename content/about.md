@@ -16,4 +16,4 @@ I'm an **OSS aficionado**. Hacktoberfest has become somewhat of a tradition for 
 
 Other than that, one of my biggest passions is music. Either listening to it, seeing it live, or tinkering with instruments, I simply can't get enough of it. Other interests include surfing, books, NBA, videogames, series, and movies.
 
-Want to catch-up? [Reach out]({{< ref contact >}}).
+Want to catch-up? [Hit me up]({{< ref contact >}}).

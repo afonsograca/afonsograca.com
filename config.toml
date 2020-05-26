@@ -2,3 +2,22 @@ baseURL = "http://afonsograca.com/"
 languageCode = "en-gb"
 title = "Afonso Graça"
 theme = "hello-friend-ng"
+
+[author]
+  name = "Afonso Graça"
+
+[[params.social]]
+  name = "linkedin"
+  url  = "https://www.linkedin.com/in/afonsograca/"
+
+[[params.social]]
+  name = "github"
+  url  = "https://github.com/afonsograca"
+  
+[[params.social]]
+  name = "stackoverflow"
+  url  = "https://stackoverflow.com/users/798731/afonso"
+
+[[params.social]]
+  name = "twitter"
+  url  = "https://twitter.com/AfonsoGraca"
