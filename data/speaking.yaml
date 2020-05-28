@@ -1,0 +1,23 @@
+  # Template for a Speaking event
+  # - name:
+  #   event:
+  #   location:
+  #   date: # ISO8601 format
+  #   deck:
+  #   recording:
+  #   code:
+  #   article:
+
+speaking:
+  - name: "FRP my Swift"
+    event: "Pixels Camp"
+    location: "Lisbon, Portugal"
+    date: "2016-10-07T16:00:00+0000"
+    deck: "https://speakerdeck.com/afonsograca/frp-my-swift"
+    recording: "https://www.youtube.com/watch?v=ysRAws4s6uE"
+    code: "https://github.com/afonsograca/pixels_camp_frp_my_swift"
+  - name: "Swift, do you even Flux?"
+    event: "Pixels Camp"
+    location: "Lisbon, Portugal"
+    date: "2017-09-28T14:00:00+0000"
+    deck: "https://speakerdeck.com/afonsograca/swift-do-you-even-flux"
