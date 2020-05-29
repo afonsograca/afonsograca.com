@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+  {{ $pastTalks := slice }}
+  {{ $upcomingTalks := slice }}
+  {{ range $.Site.Data.speaking.talks }}
+    {{ if (time .date).Before now }}
+      {{ $pastTalks = $pastTalks | append . }}
+    {{ else }}
+      {{ $upcomingTalks = $upcomingTalks | append . }}
+    {{ end }}
+  {{ end }}
+  
+  <main class="post">
+    <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+    <hr />
+    {{ partial "talks.html" (dict "Title" "Upcoming talks" "Talks"  $upcomingTalks  "EmptyState" "No upcoming talks at the moment.") }}
+    {{ partial "talks.html" (dict "Title" "Past talks"  "Talks" $pastTalks "EmptyState" "Past talks will appear here as they are added.") }}
+  </main>
+{{ end }}

@@ -1,0 +1,49 @@
+<div class="post-content">
+  <h3>{{ .Title }}</h3>
+  {{ if ne (len .Talks) 0}}
+    <ul class="unstyled">
+      {{ range sort .Talks "date" "desc"}}
+      <li class="flex">
+        {{ if isset . "deck" }}
+          <div class="big-thumbnail">{{ partial "speakerdeck.html" (dict "Deck" .deck) }}</div>
+        {{ end }}
+        <div class="list-content">
+          <h4>{{ .name }}</h4>
+          {{ if isset . "event" }}
+          <div>
+            <span class="iconised event">{{ .event }}</span>
+          </div>
+          {{ end }}
+          {{ if isset . "location" }}
+          <div>
+            <span class="iconised location">{{ .location }}</span>
+          </div>
+          {{ end }}
+          {{ if isset . "date" }}
+          <div>
+            <span class="iconised date">{{ dateFormat "Monday, January 2, 2006" .date }}</span>
+          </div>
+          {{ end }}
+          {{ if isset . "recording" }}
+          <div>
+            <a class="iconised recording" href="{{ .recording }}">Watch it</a>
+          </div>
+          {{ end }}
+          {{ if isset . "code" }}
+          <div>
+            <a class="iconised code" href="{{ .code }}">Check out the code</a>
+          </div>
+          {{ end }}
+          {{ if isset . "article" }}
+          <div>
+            <a class="iconised article" href="{{ .article }}">Read about it</a>
+          </div>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  {{- else }}
+    <p>{{ .EmptyState }}</p>
+  {{- end}}
+</div>
