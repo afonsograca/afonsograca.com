@@ -1,0 +1,57 @@
+ul.unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 2rem;
+
+    &.flex {
+      display: flex;
+
+      div.list-content {
+        flex-grow: 1;
+        margin-left: 1rem;
+
+        h4 {
+          margin: 0 0 0.5rem 0;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        .iconised::before {
+          font-family: "simple-line-icons";
+          margin-right: 0.5rem;
+        }
+        .event::before {
+          content: "\e042";
+        }
+        .location::before {
+          content: "\e096";
+        }
+        .date::before {
+          content: "\e075";
+        }
+        .recording::before {
+          content: "\e008";
+        }
+        .code::before {
+          content: "\e60c";
+        }
+        .article::before {
+          content: "\e093";
+        }
+      }
+    }
+    div.big-thumbnail {
+      flex-basis: 33%;
+      flex-shrink: 0;
+
+      img {
+        border-radius: 6px;
+      }
+    }
+  }
+}

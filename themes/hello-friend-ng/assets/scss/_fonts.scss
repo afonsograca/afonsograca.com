@@ -48,3 +48,17 @@
   src: url("../fonts/Inter-UI-BoldItalic.woff2") format("woff2"),
        url("../fonts/Inter-UI-BoldItalic.woff") format("woff");
 }
+
+@font-face {
+  font-family: 'simple-line-icons';
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  src: url('../fonts/Simple-line-icons.eot');
+  src: url('../fonts/Simple-line-icons.eot') format('embedded-opentype'),
+       url('../fonts/Simple-line-icons.woff2') format('woff2'),
+       url('../fonts/Simple-line-icons.woff') format('woff'),
+       url('../fonts/Simple-line-icons.ttf') format('truetype'),
+       url('../fonts/Simple-line-icons.svg#Simple-line-icons') format('svg');
+}
