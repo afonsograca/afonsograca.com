@@ -1,0 +1,26 @@
+  # Template for an Education entry
+  # - university:
+  #   degree:
+  #   location:
+  #   start_date: # ISO8601 format
+  #   end_date: # ISO8601 format
+  #   average:
+  #   url:
+  #   image:
+  education:
+    - university: "Budapest University of Technology and Economics"
+      degree: "Software Engineering (M.Sc.)"
+      location: "Budapest, Hungary"
+      start_date: "2011-09-01T00:00:00+0000"
+      end_date: "2012-06-01T00:00:00+0000"
+      average: "5 out of 5"
+      url: "https://www.bme.hu/"
+      image: ""
+    - university: "University of Porto"
+      degree: "Informatics and Computer Engineering (B.Sc. + M.Sc.)"
+      location: "Porto, Portugal"
+      start_date: "2007-09-01T00:00:00+0000"
+      end_date: "2012-07-01T00:00:00+0000"
+      average: "16.25 out of 20"
+      url: "https://sigarra.up.pt/feup/"
+      image: ""
