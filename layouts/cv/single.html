@@ -1,0 +1,20 @@
+{{ define "main" }}
+  
+  <main class="post">
+    <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    {{ print "##### _Last updated: " (.Lastmod.Format "January 2, 2006") "_" | markdownify }}
+    
+    <div class="post-content">
+      {{ .Content }}
+
+      {{ with $.Site.Data.skills }}
+        <h3>Skills</h3>
+        <span>
+          {{- range .skills }}
+            {{- . }}&emsp;
+          {{- end }}
+        </span>
+      {{ end }}
+    </div>
+  </main>
+{{ end }}
