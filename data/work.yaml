@@ -16,7 +16,7 @@ work:
     description: |
       Analyst building the Business Intelligence layer for Angola´s main insurance company.
     url: "https://www2.deloitte.com/pt/pt.html"
-    image:
+    image: "/cv/deloitte.png"
   - company: "Deloitte"
     position: "Consultant"
     location: "Lisbon, Portugal"
@@ -25,7 +25,7 @@ work:
     description: |
       Consultant developing the online banking experience for a Portuguese bank.
     url: "https://www2.deloitte.com/pt/pt.html"
-    image: ""
+    image: "/cv/deloitte.png"
   - company: "Unbabel"
     position: "Developer"
     location: "Lisbon, Portugal"
@@ -38,7 +38,7 @@ work:
       - Provided support the existing mobile apps (Android & iOS)
       UX was also one of my challenges on an everyday basis.
     url: "https://unbabel.com"
-    image:
+    image: "/cv/unbabel.png"
   - company: "Airtasker"
     position: "iOS Engineer"
     location: "Sydney, Australia"
@@ -52,7 +52,7 @@ work:
       - Created a proof-of-concept onboarding experience for the iOS app
       - Helped setting up tooling for iOS monitoring
     url: "https://www.airtasker.com"
-    image: ""
+    image: "/cv/airtasker.png"
   - company: "Airtasker"
     position: "Senior iOS Engineer"
     location: "Sydney, Australia"
@@ -68,4 +68,4 @@ work:
       - Helped put in place Airtasker's Design System, by promoting the use of Atomic Design 
       - Mentored designers in how auto layout and iOS components behave and how designs are translated into the final product
     url: "https://www.airtasker.com"
-    image: ""
+    image: "/cv/airtasker.png"

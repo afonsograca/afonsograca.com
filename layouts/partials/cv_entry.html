@@ -1,0 +1,49 @@
+<div class="post-content">
+  <h3>{{ .Title }}</h3>
+  {{ if ne (len .Entries) 0}}
+    <ul class="unstyled">
+      {{ range sort .Entries "end_date" "desc"}}
+      <li class="flex">
+        {{ if and (isset . "image") (ne .image nil) }}
+          <div class="big-thumbnail">{{ partial "thumbnail.html" (dict "Url" .url "Image" .image "AltText" (printf "%s%s" (or .company .university) " logo") ) }}</div>
+        {{ end }}
+        <div class="list-content">
+          {{ if isset . "company" }}
+            <h4><a href="{{ .url }}">{{ .position }}, {{ .company }}</a></h4>
+          {{ end }}
+          {{ if isset . "university" }}
+            <h4><a href="{{ .url }}">{{ .degree }}, {{ .university }}</a></h4>
+          {{ end }}
+          {{ if or (isset . "location") (isset . "start_date") }}
+            <div>
+              {{- if isset . "location" }}
+              <span class="">{{ .location }}</span>
+              {{- end }}
+              {{- if and (isset . "location") (isset . "start_date") }}&emsp;{{- end }}
+              {{- if isset . "start_date"}}
+                <span class="">{{ dateFormat "Jan 2006" .start_date  }} —
+                {{- if and (isset . "end_date") (ne .end_date nil) }}
+                {{ dateFormat "Jan 2006" .end_date  }}
+                {{- else }}
+                  <b>Present</b>
+                {{- end }}
+                </span>
+              {{- end }}
+            </div>
+          {{ end }}
+          {{ if isset . "average" }}
+            <div>
+              <span class="">{{ .average }}</span>
+            </div>
+          {{ end }}
+          {{ if isset . "description" }}
+            <div>{{ .description | markdownify }}</div>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  {{- else }}
+    <p>{{ .EmptyState }}</p>
+  {{- end}}
+</div>
