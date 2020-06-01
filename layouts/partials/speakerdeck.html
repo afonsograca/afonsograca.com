@@ -1,5 +1,4 @@
 {{ with .Deck }}
-<a href="{{ .url }}">
-  <img src="https://speakerd.s3.amazonaws.com/presentations/{{ .thumbnail }}/slide_0.jpg" alt="Presentation thumbnail">
-</a>
+  {{ $imageUrl := printf "%s%s%s" "https://speakerd.s3.amazonaws.com/presentations/" .thumbnail "/slide_0.jpg" }}
+  {{ partial "thumbnail.html" (dict "Url" .url "Image" $imageUrl "AltText" "Presentation thumbnail") }}
 {{ end }}

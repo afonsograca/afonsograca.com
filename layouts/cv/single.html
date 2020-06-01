@@ -5,8 +5,6 @@
     {{ print "##### _Last updated: " (.Lastmod.Format "January 2, 2006") "_" | markdownify }}
     
     <div class="post-content">
-      {{ .Content }}
-
       {{ with $.Site.Data.skills }}
         <h3>Skills</h3>
         <span>
@@ -14,6 +12,14 @@
             {{- . }}&emsp;
           {{- end }}
         </span>
+      {{ end }}
+
+      {{ with $.Site.Data.work }}
+        {{ partial "cv_entry.html" (dict "Title" "Work" "Entries" .work "EmptyState" "Previous work experience will appear here once it's added.") }}
+      {{ end }}
+
+      {{ with $.Site.Data.education }}
+        {{ partial "cv_entry.html" (dict "Title" "Education" "Entries" .education "EmptyState" "Education will appear here once it's added.") }}
       {{ end }}
     </div>
   </main>

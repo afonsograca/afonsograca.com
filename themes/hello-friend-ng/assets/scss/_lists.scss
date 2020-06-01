@@ -11,7 +11,6 @@ ul.unstyled {
 
       div.list-content {
         flex-grow: 1;
-        margin-left: 1rem;
 
         h4 {
           margin: 0 0 0.5rem 0;
@@ -48,6 +47,7 @@ ul.unstyled {
     div.big-thumbnail {
       flex-basis: 33%;
       flex-shrink: 0;
+      margin-right: 1rem;
 
       img {
         border-radius: 6px;
