@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Afonso Graça — Software Developer"
 date: 2020-05-26T20:39:16+01:00
 ---
 # Afonso Graça

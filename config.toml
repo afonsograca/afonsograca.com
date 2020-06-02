@@ -3,8 +3,14 @@ languageCode = "en-gb"
 title = "Afonso Graça"
 theme = "hello-friend-ng"
 
-[author]
-  name = "Afonso Graça"
+[params]
+  author = "Afonso Graça"
+  description = "Afonso Graça is a software developer, a UX enthusiast and an OSS aficionado. He is also a music-lover and a concert-goer."
+  title = "Afonso Graça — Software Developer"
+  keywords = "Afonso Graça, Afonso, Graça, Software, Software Development, iOS, Swift, Objective-C"
+
+[taxonomies]
+  series = "series"
 
 [[params.social]]
   name = "linkedin"
