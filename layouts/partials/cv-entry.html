@@ -5,7 +5,7 @@
       {{ range sort .Entries "end_date" "desc"}}
       <li class="flex">
         {{ if and (isset . "image") (ne .image nil) }}
-          <div class="big-thumbnail">{{ partial "thumbnail.html" (dict "Url" .url "Image" .image "AltText" (printf "%s%s" (or .company .university) " logo") ) }}</div>
+          <div class="thumbnail-small">{{ partial "thumbnail.html" (dict "Url" .url "Image" .image "AltText" (printf "%s%s" (or .company .university) " logo") ) }}</div>
         {{ end }}
         <div class="list-content">
           {{ if isset . "company" }}
