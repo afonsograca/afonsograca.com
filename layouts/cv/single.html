@@ -15,11 +15,11 @@
       {{ end }}
 
       {{ with $.Site.Data.work }}
-        {{ partial "cv_entry.html" (dict "Title" "Work" "Entries" .work "EmptyState" "Previous work experience will appear here once it's added.") }}
+        {{ partial "cv-entry.html" (dict "Title" "Work" "Entries" .work "EmptyState" "Previous work experience will appear here once it's added.") }}
       {{ end }}
 
       {{ with $.Site.Data.education }}
-        {{ partial "cv_entry.html" (dict "Title" "Education" "Entries" .education "EmptyState" "Education will appear here once it's added.") }}
+        {{ partial "cv-entry.html" (dict "Title" "Education" "Entries" .education "EmptyState" "Education will appear here once it's added.") }}
       {{ end }}
     </div>
   </main>
